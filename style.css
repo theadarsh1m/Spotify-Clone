@@ -84,7 +84,6 @@ a {
     /* width: 1.25rem; */
 
 }
-
 .icons {
     font-size: 1.25rem;
     display: flex;
@@ -164,13 +163,47 @@ a {
     }
 }
 
+.play-button {
+    position: absolute;
+    bottom: -40px;
+    right: 12%;
+    background-color: #1bd760;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: top 0.3s ease;
+    opacity: 0.7;
+}
+
 .card {
-    background-color: #232323;
+    background-color: transparent;
     width: 150px;
     border-radius: 0.5rem;
     padding: 1rem;
     margin-left: 1.5rem;
     margin-top: 1rem;
+    height: 15.7rem;
+    position: relative; /* Position relative to position the play button */
+    overflow: hidden; /* Hide overflow to keep the button inside the card */
+    transition: box-shadow 0.3s ease;
+    &:hover{
+        background-color: #232323;
+
+    }
+    &:hover .play-button{
+        top: 42%;
+        opacity: 1;
+    }
+    
+}
+
+
+.card p:hover{
+    text-decoration: underline;
+    cursor: pointer;
 }
 
 .cards-container {
@@ -239,6 +272,7 @@ a {
     opacity: 0.7;
     &:hover{
         opacity: 1;
+        cursor: pointer;
     }
 }
 
@@ -253,7 +287,6 @@ a {
     width: 70%;
     appearance: none;
     background-color: transparent;
-    cursor: pointer;
 
 }
 
@@ -270,10 +303,9 @@ a {
     background-color: #1bd760;
     border-radius: 50%;
     margin-top: -6px;
-    &:hover{
-        background-color: white;
-    }
+    cursor: pointer;
 }
+
 
 .playback-bar span{
     font-weight: 400; 
@@ -288,6 +320,13 @@ a {
 .album{
     display: flex;
     align-items: center;
+    i{
+        margin-left: 1rem;
+        opacity: 0.65;
+        &:hover{
+            opacity: 1;
+        }
+    }
 }
 
 .album-info{
@@ -300,6 +339,10 @@ a {
     margin-left: 1rem;
     font-size: small;
     font-weight: 650;
+    &:hover{
+        cursor: pointer;
+        text-decoration: underline;
+    }
 }
 
 .info{
@@ -307,13 +350,63 @@ a {
     margin-left: 1rem;
     font-size: 0.7rem;
     opacity: 0.65;
+    &:hover{
+        cursor: pointer;
+        text-decoration: underline;
+    }
 }
 
 .album img{
     height: 3rem;
-    width: auto;
+    width: 18%;
     border-radius: 4px;
     margin-left: 0.75rem;
 }
+
+.controls{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.controls i{
+    margin: 0.8rem;
+    opacity: 0.65;
+    &:hover{
+        opacity: 1;
+    }
+}
+
+.volume{
+    appearance: none;
+    background-color: #1bd760;
+    border-radius: 50%;
+}
+
+.volume::-webkit-slider-runnable-track{
+    border-radius: 100px;
+    background-color: white;
+    height: 0.25rem;
+}
+
+.volume::-webkit-slider-thumb {
+    appearance: none;
+    height: 0.8rem; 
+    width: 0.8rem;
+    background-color: #1bd760;
+    border-radius: 50%;
+    opacity: 0;
+    transition: 0 0.3s ease;
+    margin-top: -4px;
+}
+
+.volume:hover::-webkit-slider-thumb{
+    opacity: 1;
+}
+
+
+
+
+
 
 

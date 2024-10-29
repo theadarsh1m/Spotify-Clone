@@ -23,3 +23,5 @@ This is a Spotify web interface clone created using HTML and CSS. It replicates 
 
    ```bash
    git clone https://github.com/theadarsh1m/spotify-clone.git
+
+2. Open the index.html file in your browser to view the clone.

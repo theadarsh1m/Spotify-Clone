@@ -2,6 +2,8 @@
 
 This is a Spotify web interface clone created using HTML and CSS. It replicates the main UI features of Spotify, providing a visually similar experience to the original web application.
 
+### To View page: https://theadarsh1m.github.io/Spotify-Clone/
+
 ## 🌟 Features
 
 - **Responsive Layout**: Adapts to different screen sizes.

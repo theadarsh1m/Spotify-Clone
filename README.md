@@ -25,3 +25,9 @@ This is a Spotify web interface clone created using HTML and CSS. It replicates 
    git clone https://github.com/theadarsh1m/spotify-clone.git
 
 2. Open the index.html file in your browser to view the clone.
+
+## 🎉 Acknowledgments
+This project was created for educational purposes to practice HTML and CSS by replicating Spotify’s interface.
+
+Feel free to copy and paste this directly into your README file on GitHub!
+
